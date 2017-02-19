@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="MCBlueMoon's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://mcbluemoon.github.io/index.html">
 <meta property="og:site_name" content="MCBlueMoon's Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MCBlueMoon's Blog">
@@ -191,7 +191,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5与CSS3基础教程读书笔记/">HTML5与CSS3基础教程读书笔记</a></li></ul>
                     </div>
                 </section>
                 
@@ -270,11 +270,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-2-网页的构造块" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/18/hello-world/" class="article-date">
-      <time datetime="2017-02-18T13:59:31.727Z" itemprop="datePublished">2017-02-18</time>
+      <a href="/2017/02/19/2-网页的构造块/" class="article-date">
+      <time datetime="2017-02-19T14:27:24.000Z" itemprop="datePublished">2017-02-19</time>
 </a>
 
 
@@ -289,7 +289,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/18/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/02/19/2-网页的构造块/">(2)网页的构造块</a>
     </h1>
   
 
@@ -299,15 +299,28 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <ol>
+<li><p>网页的内容包括：文本内容、html标签（对内容进行描述）、对其他文件的引用以及用于浏览器和搜索引擎的信息</p>
+</li>
+<li><p>HTML 描述的是网页内容的含义，即<strong>语义（semantics）</strong>。语义化 HTML（semantic HTML）指的是那些使用最恰当的 HTML 元素进行标记的内容。在标记的过程中并不关心内容显示。</p>
+</li>
+<li><p>文件名建议全部使用小写</p>
+</li>
+<li><p>从SEO的角度，短横线“-”相比“_”是对搜索引擎更友好的方式</p>
+</li>
+<li><p>a标签rel 属性用于指定当前文档与被链接文档的关系，使用该属性增强语义，搜索引擎可以利用该属性获得更多有关链接的信息。title也增强a元素的语义</p>
+</li>
+<li><p>语义化的原因：</p>
+<ul>
+<li>提升可访问性和互操作性（内容对于借助辅助技术(如屏幕阅读器)的残障访问者是可访问的，同时对于台式机、手机、平板电脑及其他设备上的浏览器都是可访问的）</li>
+<li>提升搜索引擎优化（SEO）的效果</li>
+<li>使维护代码和添加样式变得容易</li>
+<li>（通常）使代码更少，页面加载更快</li>
+</ul>
+</li>
+<li><p>small 元素表示的含义是法律声明等条文细则</p>
+</li>
+</ol>
 
       
     </div>
@@ -317,6 +330,72 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML5与CSS3基础教程读书笔记/">HTML5与CSS3基础教程读书笔记</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-1-渐进增强" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/19/1-渐进增强/" class="article-date">
+      <time datetime="2017-02-19T11:08:28.000Z" itemprop="datePublished">2017-02-19</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/19/1-渐进增强/">(1)渐进增强</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>渐进增强</strong> （progressive enhancement）的理念是为了构建具有普适性的网站而提出的一种建站方法，它由Steve Champeon于2003年提出（<a href="http://en.wikipedia.org/wiki/Progres-sive_enhancement）" target="_blank" rel="external">http://en.wikipedia.org/wiki/Progres-sive_enhancement）</a></p>
+<p>开始用所有人都能访问的HTML内容和行为构建网站，再用CSS加入你的设计，最后用JavaScript添加额外的行为。这些组件都是分离的，但可以同时发挥作用。</p>
+<p>这样做的结果就是，那些只能访问基本页面的设备和浏览器得到的是简化的、默认的体验，那些能够浏览更健壮的网站的设备和浏览器将看到增强的版本。关键是网站的内容是可访问的。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML5与CSS3基础教程读书笔记/">HTML5与CSS3基础教程读书笔记</a></li></ul>
+    </div>
+
       
       <div class="clearfix"></div>
     </div>
