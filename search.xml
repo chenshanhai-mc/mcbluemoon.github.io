@@ -4,6 +4,125 @@
   
     
     <entry>
+      <title><![CDATA[(3)HTML5结构性元素]]></title>
+      <url>http://mcbluemoon.github.io/2017/02/23/3-HTML5%E7%BB%93%E6%9E%84%E6%80%A7%E5%85%83%E7%B4%A0/</url>
+      <content type="html"><![CDATA[<ol>
+<li><p>使用 HTML5 DOCTYPE 可以确保浏览器以可靠的模式呈现页面，同时告诉HTML 验证器根据 HTML5 允许的元素和语法检查代码</p>
+</li>
+<li><p>搜索引擎可能会根据 lang 属性指定的语言区分搜索结果，从而仅显示与搜索词语言相同的页面</p>
+</li>
+<li><p>title:</p>
+<ul>
+<li>页面标题会被搜索引擎采用，从而能够大致了解页面内容，并将页面标题作为搜索结果中的链接显示，标题也是判断搜索结果中页面相关度的重要因素。</li>
+<li>让每个页面的 title 是唯一的，从而提升搜索引擎结果排名，并让访问者获得更好的体验</li>
+<li>建议将 title 的核心内容放在前 60 个字符（含空格）中，因为搜索引擎通常将超过此数目（作为基准）的字符截断</li>
+</ul>
+</li>
+<li><p>h1 ~ h6:</p>
+<ul>
+<li>由于标题通常传达的是页面的主题，因此，对搜索引擎而言，如果标题与搜索词匹配，这些标题就会被赋予很高的权重，尤其是等级最高的 h1 （这并不是说页面中的 h1 越多越好，搜索引擎还是足够聪明的）</li>
+<li>标题主要是表达内容所处的层次关系，展示的样式可以通过样式去修改和控制</li>
+</ul>
+</li>
+<li><p>header:</p>
+<ul>
+<li>包含介绍性内容或者导航性内容</li>
+<li>整个页面的header可以加上 role=”banner”，它显式地指出该页眉为页面级的页眉，因此可以提高可访问性（其他元素也有role属性）</li>
+<li>header、footer不要自嵌套，也不要相互嵌套，不要嵌套在address中</li>
+</ul>
+</li>
+<li><p>nav:</p>
+<ul>
+<li>将一组链接指定为重要导航</li>
+<li>应用 role=”navigation” 提高可访问性</li>
+<li>不要嵌套在address中</li>
+<li>至少应该将网站全局导航（让用户可以跳至网站各个主要部分的导航）标记为 nav 。这种 nav 通常（但并不总是）出现在页面级的 header 元素里面</li>
+</ul>
+</li>
+<li><p>main:</p>
+<ul>
+<li>一个页面只有一个部分代表其主要内容。可以将这样的内容包在 main 元素中</li>
+<li>在一个页面仅使用一次main元素</li>
+<li>最好在 main 开始标签中加上 role=”main”</li>
+<li>不能将 main 放置在 article 、 aside 、footer 、 header 或 nav 元素中</li>
+</ul>
+</li>
+<li><p>article:</p>
+<ul>
+<li>article 元素表示文档、页面、应用或网站中一个独立的容器，原则上是可独立分配或可再用的</li>
+<li>如一篇论坛帖子、一篇杂志或报纸文章、一篇博客条目、一则用户提交的评论、一个交互式的小部件或小工具，或者任何其他独立的内容项</li>
+</ul>
+</li>
+<li><p>section：</p>
+<ul>
+<li>section是具有相似主题的一组内容，通常包含一个标题</li>
+<li>通用的区块，从语义上讲， section 标记的是页面中的特定区域，而 div 则不传达任何语义<br>-如网站的主页可以分成介绍、新闻条目、联系信息等区块</li>
+<li>如果只是出于添加样式的原因要对内容添加一个容器，应使用 div 而不是 section</li>
+</ul>
+</li>
+<li><p>aside:</p>
+<ul>
+<li>重要引述、侧栏（图3.10.3）、指向相关文章的一组链接（通常针对新闻网站）、广告、 nav 元素组（如博客的友情链接），Twitter源、相关产品列表（通常针对电子商务网站），等等</li>
+<li>role=”complementary” 可以提高可访问性</li>
+<li>应该将附注栏内容放在 main 的内容之后。出于 SEO和可访问性的目的，最好将重要的内容放在前面。可以通过 CSS 改变它们在浏览器中的显示顺序<br>-aside 不要嵌套在 address元素内</li>
+<li>对于与内容有关的图像（如图表、图形或带有说明文字的插图），使用 figure 而非 aside</li>
+</ul>
+</li>
+<li><p>footer:</p>
+<ul>
+<li>footer 元素代表嵌套它的最近的 article 、aside 、 blockquote 、 body 、 details 、fieldset 、 figure 、 nav 、 section 或 td 元 素的页脚。</li>
+<li>当footer最近的祖先是 body 时，它是整个页面的页脚</li>
+<li>footer不能嵌套在address中</li>
+<li>可对页面级的footer 使 用 role=”contentinfo”，且一个页面只能使用一次</li>
+</ul>
+</li>
+<li><p>div</p>
+<ul>
+<li>更多是作为添加css或者进行js操作选择的容器</li>
+<li>实现一些特定的交互行为或效果，如弹窗的遮罩层</li>
+<li>div 是块级内容的无语义容器，而 span 则是短语内容的无语义容器</li>
+</ul>
+</li>
+<li><p>一个常用文档布局及对应html结构<br><img src="http://p1.bpimg.com/4851/3013330de83cfe35.jpg" alt=""><br><img src="http://p1.bpimg.com/4851/cd693d376fcbbe03.png" alt=""></p>
+</li>
+<li><p>role属性说明<br>html 里面的 role 本质上是增强语义性，当现有的HTML标签不能充分表达语义性的时候，就可以借助role来说明。通常这种情况出现在一些自定义的组件上，这样可增强组件的可访问性、可用性和可交互性。</p>
+<p>role的作用是描述一个非标准的tag的实际作用。比如用div做button，那么设置div 的 role=“button”，辅助工具就可以认出这实际上是个button</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">role</span>=<span class="string">"checkbox"</span> <span class="attr">aria-checked</span>=<span class="string">"checked"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">辅助工具(如盲人用的屏幕阅读器)就会知道，这个div实际上是个checkbox的角色，为选中状态。</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p> <img src="http://p1.bpimg.com/4851/13b20307dc90f63f.png" alt=""><br> <img src="http://p1.bpimg.com/4851/d36feb3f25cee701.png" alt=""></p>
+<ol>
+<li><p>id和class</p>
+<ul>
+<li>不推荐出于添加样式的目的使用 id</li>
+<li>用来创建指向具有特定 id 的元素的链接（锚点）</li>
+<li>一个页面里不能出现两个具有相同 id 的元素，并且每个元素都只能有一个 id<br>-在 class 和 id 名称中，通常使用短横线分隔多个单词，例如 class=”footer-page”</li>
+<li>应避免使用描述表现样式的名称，如 class=”red” ，因为你可能在下周决定将配色方案改为蓝色。尽管在 CSS 中对分配给某一类元素的颜色进行修改是相当容易的，但这样做会导致你的HTML 拥有一个名为红色却实际呈现为另一种颜色的 class </li>
+</ul>
+</li>
+<li><p>title属性</p>
+<ul>
+<li>img标签中，在鼠标悬停时，title属性优先于alt属性显示</li>
+</ul>
+</li>
+<li><p>注释</p>
+<ul>
+<li>在主要区块的开头和结尾处添加注释是一种常见的做法，这样可以让你或一起合作的开发人员将来修改代码变得更加容易</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> HTML5与CSS3基础教程读书笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[(2)网页的构造块]]></title>
       <url>http://mcbluemoon.github.io/2017/02/19/2-%E7%BD%91%E9%A1%B5%E7%9A%84%E6%9E%84%E9%80%A0%E5%9D%97/</url>
       <content type="html"><![CDATA[<ol>
