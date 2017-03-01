@@ -4,6 +4,204 @@
   
     
     <entry>
+      <title><![CDATA[(6)链接]]></title>
+      <url>http://mcbluemoon.github.io/2017/03/02/6-%E9%93%BE%E6%8E%A5/</url>
+      <content type="html"><![CDATA[<ol>
+<li><p>对于指向另一网站的链接，建议使用属性 rel=”external”，它描述包含链接的页面和链接指向的页面之间的关系。它也是另一种提升 HTML 语义化程度的方式。搜索引擎也会利用这些信息。</p>
+</li>
+<li><p>在 URL 中应该全部使用小写字母，除非指向的页面或目录名称中含有大写字母。对于你自己的网站，应使用小写字母命名所有的文件夹和文件，并与链接 URL 对应</p>
+</li>
+<li><p>链接中不推荐使用taget（属于支配用户行为）。不推荐使用iframe</p>
+</li>
+<li><p>为每一个锚 id 赋一个有意义的名称可以增强 HTML 文档的语义丰富度</p>
+</li>
+<li><p>如果锚位于另一个文档，就使用 <a href=" page.html#anchor-name "> 引 用 该区域</a></p>
+</li>
+<li><p>文件：对于指向万维网上任何文件（包括图像、ZIP 文件、程序、PDF 及其他等）的链接，输入 http://www.site.com/dir/file.ext ，其中www.site.com 是主机名称， dir/file.ext 是目标文件的路径。后者包括了文件目录和文<br>件名（以及扩展名）</p>
+</li>
+<li><p>邮件：对于电子邮件地址，输入 mailto:name@domain.com （不以 http:// 开头），其中 name@domain.com 是电子邮件地址（不过，应避免链接到电子邮件地址，因为垃圾邮件机器人会从网页上搜集这些地址并向其发送垃圾邮件）</p>
+</li>
+<li><p>电话号码：对于电话号码，输入 tel:+ （不以 http://开头）并紧跟着国家代码和电话号码（所有的号码中都不必包含短横线）<br>在理解 tel: 的智能手机里，如果点击这样的链接，手机就会询问用户是否需要<br>拨打该号码。对于一些不是电话的设备（如iPad），则会询问用户是否需要将该号码添加到通讯录里。此外，有的桌面浏览器在这种情况下会启动 Google Voice 或 Skype，而其他的浏览器则不知道该如何处理这种情况</p>
+</li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> HTML5与CSS3基础教程读书笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[(5)图像]]></title>
+      <url>http://mcbluemoon.github.io/2017/03/02/5-%E5%9B%BE%E5%83%8F/</url>
+      <content type="html"><![CDATA[<ol>
+<li><p>图片格式<br><img src="http://fromwiz.com/share/resources/ddf3c278-5721-4a77-9e4b-b690d1cd9d72/index_files/9d124b84-f25f-4d48-a4a7-c85b44309a30.png" alt=""></p>
+<p><img src="http://fromwiz.com/share/resources/ddf3c278-5721-4a77-9e4b-b690d1cd9d72/index_files/f234b45a-0540-415a-ae66-6c1ca9166b1f.png" alt=""></p>
+<p><img src="http://fromwiz.com/share/resources/ddf3c278-5721-4a77-9e4b-b690d1cd9d72/index_files/9053154d-2d2f-45d0-a453-7cf67f6cd780.png" alt=""></p>
+<p><img src="http://fromwiz.com/share/resources/ddf3c278-5721-4a77-9e4b-b690d1cd9d72/index_files/2ba92fcc-3ac5-4bf2-a09f-a649ea7ccced.png" alt=""></p>
+<p><img src="http://fromwiz.com/share/resources/ddf3c278-5721-4a77-9e4b-b690d1cd9d72/index_files/4d20df45-f2d9-4c1e-b023-a0d2413560fa.png" alt=""></p>
+</li>
+<li><p>web图像的要点</p>
+<ul>
+<li>大多数照片都应保存为 JPEG 格式，图标、标识等颜色较少的图像应保存为 PNG 格式。</li>
+<li>应使用 PNG-8 或 PNG-32（ 常误作 PNG-24）创建具有alpha透明度的图像。</li>
+<li>合理的图像大小（尺寸）会让图像文件变得更小。应尽可能地减小图像尺寸，从而让页面加载得更快</li>
+</ul>
+</li>
+<li><p>如果图像是页面设计的一部分，而不是内容的一部分，则应使用 CSS  background-image 属性引入该图像，而不是使用 img 标记</p>
+</li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> HTML5与CSS3基础教程读书笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[(4)文本相关的语义化元素]]></title>
+      <url>http://mcbluemoon.github.io/2017/03/02/4-%E6%96%87%E6%9C%AC%E7%9B%B8%E5%85%B3%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E5%85%83%E7%B4%A0/</url>
+      <content type="html"><![CDATA[<ol>
+<li><p>strong和em</p>
+<ul>
+<li>前者强调内容的重要性，后者表示内容的重点</li>
+</ul>
+</li>
+<li><p>b和i</p>
+<ul>
+<li>b和strong，i和em有一样的展示效果，但它们没有强调的语义</li>
+</ul>
+</li>
+<li><p>small</p>
+<ul>
+<li>表示细则一类的旁注（side comment），“通常包括免责声明、注意事项、法律限制、版权信息等。有时我们还可以用它来表示署名，或者满足许可要求。</li>
+<li>旧版HTML中 strong 所表示文本的强调程度比 em 表示的文本要高。不过，在HTML5 中， em 是表示强调的唯一元素，而strong 表示的则是重要程度</li>
+</ul>
+</li>
+<li><p>figure和figcaption</p>
+<ul>
+<li>figure定义一个图，图可以是图表、照片、图形、插图、代码片段，以及其他类似的独立内容</li>
+<li>figcaption 是figure 的标题，可选，出现在 figure 内容的开头或结尾处</li>
+<li>figure 可以有多个内容，只允许有一个figcaption</li>
+<li>figcaption 不能脱离figure独立存在</li>
+<li>现代浏览器在默认情况下会为 figure添加 40px 宽的左右外边距</li>
+</ul>
+</li>
+<li><p>cite</p>
+<ul>
+<li>指明对某内容源的引用或参考。例如，戏剧、脚本或图书的标题，歌曲、电影、照片或雕塑的名称，演唱会或音乐会，规范、报纸或法律文件等</li>
+<li>cite 只用于参考源本身，而从中引述的内容使用blockquote 或 q </li>
+</ul>
+</li>
+<li><p>blockquote 和 q</p>
+<ul>
+<li>blockquote 元素表示单独存在的引述， q 元素则用于短的引述</li>
+<li>可以包含 cite=”url” 属性,该属性对搜索引擎或其他收集引述文本及其引用的自动化工具来说还是有用的</li>
+<li>浏览器应对 q 元素中的文本自动加上特定语言的引号，但不同浏览器的效果并不相同</li>
+</ul>
+</li>
+<li><p>time</p>
+<ul>
+<li>?还没明白用法</li>
+</ul>
+</li>
+<li><p>abbr</p>
+<ul>
+<li>用于缩写词</li>
+<li>使用可选的 title 属性提供缩写词的全称，或将全称放在缩写词后面的括号里，或两种都使用</li>
+<li>当缩写词有 title 属性时，Firefox 和</li>
+<li>Opera 会添加虚线下划线以引起注意。可以通过CSS 让其他浏览器也这样显示</li>
+<li>通常，仅在缩写词第一次出现在屏幕上时给出其全称（通过 title 或括号的方式）</li>
+</ul>
+</li>
+<li><p>dfn</p>
+<ul>
+<li>定义术语，对其作语义上的区分</li>
+<li>仅用 dfn 包围要定义的术语，而不是包围定义</li>
+</ul>
+</li>
+<li><p>sub和sup</p>
+<ul>
+<li>分别定义下标和上标</li>
+<li>会影响行间距，使用如下样式处理</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"> * 在所有浏览器中防止sub和sup影响line-height</div><div class="line"> * gist.github.com/413930</div><div class="line"> */</div><div class="line"> <span class="selector-tag">sub</span>, <span class="selector-tag">sup</span> &#123;</div><div class="line">     <span class="attribute">font-size</span>: <span class="number">75%</span>;</div><div class="line">     <span class="attribute">line-height</span>: <span class="number">0</span>;</div><div class="line">     <span class="attribute">position</span>: relative;</div><div class="line">     <span class="attribute">vertical-align</span>: baseline;</div><div class="line"> &#125;</div><div class="line"> <span class="selector-tag">sup</span> &#123;</div><div class="line">     <span class="attribute">top</span>: -<span class="number">0.5em</span>;</div><div class="line"> &#125;</div><div class="line"> <span class="selector-tag">sub</span> &#123;</div><div class="line">     <span class="attribute">bottom</span>: -<span class="number">0.25em</span>;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>address</p>
+<ul>
+<li>定义与 HTML 页面或页面一部分（如一篇报告或新文章）有关的作者、相关人士或组织的联系信息</li>
+<li>禁止在 address 里 包 含 以 下 元 素： h1 ～ h6 、article 、 address 、 aside 、 footer 、 header 、hgroup 、 nav 和 section</li>
+</ul>
+</li>
+<li><p>ins和del</p>
+<ul>
+<li>分别标记添加的内容和删除的内容</li>
+<li>浏览器通常对已删除的文本加上删除线，对插入的文本加上下划线</li>
+<li>cite 属性（区别于 cite 元素）用于提供一个URL，指向说明编辑原因的页面</li>
+<li>datetime 属性提供编辑的时间</li>
+</ul>
+</li>
+<li><p>s元素</p>
+<ul>
+<li>s 元素用以标注不再准确或不再相关的内容</li>
+<li>可以对任何短语使用 s ， 不能对块级元素使用</li>
+</ul>
+</li>
+<li><p>code</p>
+<ul>
+<li>包含代码示例或文件名</li>
+<li>要显示单独的一块代码（位于句子以外），可以用 pre 元素包住 code 元素以维持其格式</li>
+</ul>
+</li>
+<li><p>kbd 、 samp 和 var</p>
+<ul>
+<li>使用 kbd 标记用户输入指示</li>
+<li>samp 元素用于指示程序或系统的示例输出</li>
+<li>var 元素表示变量或占位符的值</li>
+</ul>
+</li>
+<li><p>pre</p>
+<ul>
+<li>预格式化的文本，可以保持文本固有的换行和空格</li>
+<li>文本过长时会产生滚动调，使用以下样式进行处理（IE7不兼容）</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">pre</span> &#123;</div><div class="line">    <span class="attribute">white-space</span>: pre-wrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li>其他元素<ul>
+<li>mark： 用于标记</li>
+<li>br： 用于换行，不建议使用</li>
+<li>span： 无语义，用于需要添加样式或进行js控制时使用</li>
+<li>u：  用于非文本注解？</li>
+<li>wbr：  代表“一个可换行处”，让浏览器知道哪里可以根据需要进行换行</li>
+<li>ruby、 rp 和 rt：  旁注标记（ruby annotation）是东亚语言（如<br>中文和日文）中一种惯用符号，通常用于表示生僻字的发音</li>
+<li>bdi 和 bdo： </li>
+<li>meter：表示“任务的完成进度”</li>
+<li>progress： 指示某项任务的完成进度，跟meter的区别？</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> HTML5与CSS3基础教程读书笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[(3)HTML5结构性元素]]></title>
       <url>http://mcbluemoon.github.io/2017/02/23/3-HTML5%E7%BB%93%E6%9E%84%E6%80%A7%E5%85%83%E7%B4%A0/</url>
       <content type="html"><![CDATA[<ol>
